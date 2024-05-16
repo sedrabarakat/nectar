@@ -1,0 +1,39 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:ptc_test/ui/screens/cart.dart';
+import 'package:ptc_test/ui/screens/explore.dart';
+import 'package:ptc_test/ui/screens/favorite.dart';
+import 'package:ptc_test/ui/screens/fruits.dart';
+import 'package:ptc_test/ui/screens/profile.dart';
+import 'package:ptc_test/ui/screens/shop.dart';
+
+import '../ui/screens/beverages.dart';
+import '../ui/screens/nav_bar.dart';
+
+class App_Router{
+  Route ? OnGenerateRout(RouteSettings route_settings){
+    final route_name=route_settings.name;
+    final args = route_settings.arguments;
+    switch(route_name){
+      case '/nav_bar':
+        return MaterialPageRoute(builder: (context)=> Navigator_Bar());
+      case '/explore':
+        return MaterialPageRoute(builder: (context)=> Explore());
+      case '/cart':
+        return MaterialPageRoute(builder: (context)=> Cart());
+      case '/profile':
+        return MaterialPageRoute(builder: (context)=> Profile());
+      case '/shop':
+        return MaterialPageRoute(builder: (context)=> Shop());
+      case '/favorite':
+        return MaterialPageRoute(builder: (context)=> Favorite());
+      case '/beverages':
+        return MaterialPageRoute(builder: (context)=> Beverages());
+      case '/fruits'  :
+        return MaterialPageRoute(builder: (context)=> Fruits());
+
+
+
+    }
+  }
+}
