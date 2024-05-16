@@ -2,6 +2,7 @@ import 'dart:ui';
 
 const greeny=Color.fromARGB(255, 82, 176, 117);
 const Off_White=Color.fromARGB(255, 253, 253, 254);
+const bottom_color=Color.fromARGB(255, 240, 241, 241);
 
 List<Color_Pair>Labels_colors=[
   Color_Pair(light:  Color.fromARGB(255, 236, 246, 241), dark:  Color.fromARGB(255, 170, 215, 188)),

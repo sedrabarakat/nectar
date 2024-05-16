@@ -6,10 +6,21 @@ TextStyle Poppins_labels=TextStyle(
   fontSize: 20.sp,
   fontFamily: "Poppins",
 );
+TextStyle Thin_labels=TextStyle(
+  fontSize: 17.sp,
+  fontFamily: "Poppins",
+  fontWeight: FontWeight.w300,
+  color: Colors.grey
+);
 
 TextStyle bold_labels=TextStyle(
   fontSize: 15.sp,
   fontWeight: FontWeight.bold,
+  fontFamily: "Poppins",
+);
+
+TextStyle bold=TextStyle(
+  fontSize: 25.sp,
   fontFamily: "Poppins",
 );
 
