@@ -10,15 +10,15 @@ Widget category_component({
   required index,
   required context
 }){
-  return  Padding(
-    padding:  EdgeInsets.symmetric(
-        vertical: 5.2.h,horizontal: 12.w),
-    child: GestureDetector(
-      onTap: (){
-        Navigator.of(context).pushNamed('/beverages');
-       // Navigator.pushNamed(context, 'beverages');
-
+  return  GestureDetector(
+    onTap: (){
+     // Navigator.pushNamed(context, '/beverages');
+      Navigator.push(context, MaterialPageRoute(
+          builder: (context)=>Beverages()));
       },
+    child: Padding(
+      padding:  EdgeInsets.symmetric(
+          vertical: 5.2.h,horizontal: 12.w),
       child: Container(
         clipBehavior: Clip.hardEdge,
         height: 80.h,width: 50.w,
@@ -35,3 +35,4 @@ Widget category_component({
     ),
   );
 }
+

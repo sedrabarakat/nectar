@@ -7,8 +7,10 @@ import '../widget/category_widget.dart';
 
 class Explore extends StatelessWidget{
 
+
   @override
   Widget build(BuildContext context) {
+
    return Scaffold(
      appBar: AppBar(
 

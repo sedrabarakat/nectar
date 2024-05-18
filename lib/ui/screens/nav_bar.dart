@@ -19,17 +19,22 @@ class Navigator_Bar extends StatelessWidget {
       builder: (context, states) {
         Navigator_Cubit cubit = Navigator_Cubit.get(context);
         int index = cubit.index;
-        return PersistentTabView(
-          context,
-          controller: Nav_Controller,
-          navBarStyle: NavBarStyle.style6,
-          items: Nav_Items(),
-          onItemSelected: (val) {
-            cubit.change_index(val);
-          },
-          screens: screens,
+        return Scaffold(
+          body: PersistentTabView(
+            context,
+            controller: Nav_Controller,
+            navBarStyle: NavBarStyle.style6,
+            items: Nav_Items(),
+            onItemSelected: (val) {
+              cubit.change_index(val);
+            },
+            screens: screens,
+          ),
         );
       },
     );
   }
 }
+
+
+

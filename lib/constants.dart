@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:ptc_test/ui/screens/beverages.dart';
 import 'package:ptc_test/ui/screens/cart.dart';
 import 'package:ptc_test/ui/screens/explore.dart';
 import 'package:ptc_test/ui/screens/favorite.dart';
@@ -12,7 +13,7 @@ List <Widget>screens=[
   Explore(),
   Cart(),
   Favorite(),
-  Profile()
+  Profile(),
 ];
 
 List<PersistentBottomNavBarItem> Nav_Items() {

@@ -16,14 +16,16 @@ class App_Router{
     final route_name=route_settings.name;
     final args = route_settings.arguments;
     switch(route_name){
+     /* case '/':
+        return MaterialPageRoute(builder: (context)=> OnBoarding());*/
       case '/':
-        return MaterialPageRoute(builder: (context)=> OnBoarding());
-      case '/nav_bar':
         return MaterialPageRoute(builder: (context)=> Navigator_Bar());
       case '/beverages':
-        return MaterialPageRoute(builder: (_)=> Beverages());
+        return MaterialPageRoute(builder: (context)=> Beverages());
       case '/fruits'  :
         return MaterialPageRoute(builder: (context)=> Fruits());
+
+
 
     }
   }
