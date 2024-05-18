@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ptc_test/ui/screens/boarding/board_screen.dart';
 import 'package:ptc_test/ui/screens/cart.dart';
 import 'package:ptc_test/ui/screens/explore.dart';
 import 'package:ptc_test/ui/screens/favorite.dart';
@@ -15,24 +16,14 @@ class App_Router{
     final route_name=route_settings.name;
     final args = route_settings.arguments;
     switch(route_name){
+      case '/':
+        return MaterialPageRoute(builder: (context)=> OnBoarding());
       case '/nav_bar':
         return MaterialPageRoute(builder: (context)=> Navigator_Bar());
-      case '/explore':
-        return MaterialPageRoute(builder: (context)=> Explore());
-      case '/cart':
-        return MaterialPageRoute(builder: (context)=> Cart());
-      case '/profile':
-        return MaterialPageRoute(builder: (context)=> Profile());
-      case '/shop':
-        return MaterialPageRoute(builder: (context)=> Shop());
-      case '/favorite':
-        return MaterialPageRoute(builder: (context)=> Favorite());
       case '/beverages':
-        return MaterialPageRoute(builder: (context)=> Beverages());
+        return MaterialPageRoute(builder: (_)=> Beverages());
       case '/fruits'  :
         return MaterialPageRoute(builder: (context)=> Fruits());
-
-
 
     }
   }

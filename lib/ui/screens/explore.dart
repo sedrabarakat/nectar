@@ -11,6 +11,7 @@ class Explore extends StatelessWidget{
   Widget build(BuildContext context) {
    return Scaffold(
      appBar: AppBar(
+
        centerTitle: true,
        title: Text("Find Products",style: Poppins_labels,),
      ),
@@ -19,8 +20,7 @@ class Explore extends StatelessWidget{
        crossAxisCount: 2,
        mainAxisSpacing: 4,
        itemBuilder: (context, index) {
-         return category_component(index: index, onTap_route: "",
-         context: context);
+         return category_component(index: index,context: context);
        },
      ),
    );

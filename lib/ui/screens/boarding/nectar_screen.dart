@@ -22,11 +22,14 @@ class Nectar extends StatelessWidget{
                mainAxisAlignment: MainAxisAlignment.center,
                crossAxisAlignment: CrossAxisAlignment.start,
                children: [
-               Text('nectar',
-                 style: bold_labels.copyWith(
-                     color: Colors.white,
-                   fontSize: 60.sp
-                 ),),
+               SizedBox(
+                 height: 33.h,
+                 child: Text('nectar',
+                   style: bold_labels.copyWith(
+                       color: Colors.white,
+                     fontSize: 60.sp
+                   ),),
+               ),
                  Text('online groceriet',
                    style: Thin_labels.copyWith(color: Colors.white60),)
              ],)

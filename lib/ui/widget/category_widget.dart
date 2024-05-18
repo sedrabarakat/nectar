@@ -8,7 +8,6 @@ import '../screens/beverages.dart';
 
 Widget category_component({
   required index,
-  required String onTap_route,
   required context
 }){
   return  Padding(
@@ -16,8 +15,9 @@ Widget category_component({
         vertical: 5.2.h,horizontal: 12.w),
     child: GestureDetector(
       onTap: (){
-        Navigator.push(context, MaterialPageRoute(
-            builder: (context)=>Beverages()));
+        Navigator.of(context).pushNamed('/beverages');
+       // Navigator.pushNamed(context, 'beverages');
+
       },
       child: Container(
         clipBehavior: Clip.hardEdge,
